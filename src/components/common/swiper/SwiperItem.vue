@@ -1,20 +1,21 @@
 <template>
-	<swiper-slide >
-		<slot name="img"></slot>
-	</swiper-slide>
+    <div class="slide">
+      <slot></slot>
+    </div>
 </template>
 
 <script>
-	import {SwiperSlide} from 'vue-awesome-swiper'
-	import 'swiper/swiper-bundle.min.css'
-
-export default {
-  components: {
-    SwiperSlide
-  },
-};
+	export default {
+		name: "Slide"
+	}
 </script>
 
-<style>
-
+<style scoped>
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .slide img {
+    width: 100%;
+  }
 </style>

@@ -19,6 +19,8 @@
 		line-height: 45px;
 		color: #fff;
 		font-size: 18px;
+		position: fixed;
+		z-index: 999;
 	}
 	
 	.left,.right{

@@ -27,6 +27,7 @@
 		border: none;
 		background-color: #f6f6f6;
 		outline: none;
+		flex: 1;
 	}
 	
 	.active{
