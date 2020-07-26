@@ -1,10 +1,8 @@
 <template>
 	<div class="tabcontrol">
-		<button class="controlitem" :to="path" v-for="(item,index) in texts" @click="clickControlItem(index)" :class="{active:index === activeindex}">
+		<button class="controlitem" v-for="(item,index) in texts.text1" @click="clickControlItem(index)" :class="{active:index === activeindex}">
 			<span>{{ item }}</span>
 		</button>
-		
-		<router-view></router-view>
 	</div>
 </template>
 
@@ -17,9 +15,9 @@
 		},
 		props: {
 			texts: {
-				type: Array,
+				type: Object,
 				default(){
-					return []
+					return {}
 				}
 			},
 			path:{
@@ -32,7 +30,7 @@
 		methods: {
 			clickControlItem(index){
 				this.activeindex = index;
-				this.$router.push(this.path[index]);
+				this.$emit("tabClick",this.texts.text2[index]);
 			}
 		}
 	}
@@ -54,6 +52,11 @@
 	
 	.active{
 		color: var(--color-high-text);
+	}
+	
+	.active > span{
+		border-bottom: 2px solid var(--color-high-text);
+		padding: 4px;
 	}
 	
 	

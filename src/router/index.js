@@ -14,20 +14,6 @@ Vue.use(VueRouter)
 			meta: {
 				title: "首页"
 			},
-			children:[
-				{
-					path: "/Home/:Popular",
-					// component: () => import('views/Home/HomeMain.vue'),
-				},
-				{
-					path: "/Home/:NewPattern",
-					// component: () => import('views/Home/HomeMain.vue'),
-				},
-				{
-					path: "/Home/:Selected",
-					// component: () => import('views/Home/HomeMain.vue'),
-				}
-			]
 			
 		},
 		{

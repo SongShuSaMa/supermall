@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2127895",
+      "name": "五角星",
+      "font_class": "star",
+      "unicode": "e81a",
+      "unicode_decimal": 59418
+    },
+    {
+      "icon_id": "3205015",
+      "name": "五角星",
+      "font_class": "wujiaoxing-",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "11758454",
+      "name": "五角星",
+      "font_class": "wujiaoxing",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
       "icon_id": "425652",
       "name": "我的",
       "font_class": "wode",
