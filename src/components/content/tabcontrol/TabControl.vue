@@ -30,7 +30,7 @@
 		methods: {
 			clickControlItem(index){
 				this.activeindex = index;
-				this.$emit("tabClick",this.texts.text2[index]);
+				this.$emit("tabClick",index);
 			}
 		}
 	}
@@ -39,8 +39,6 @@
 <style>
 	.tabcontrol{
 		display: flex;
-		position: sticky;
-		top: 45px;
 	}
 	.controlitem{
 		flex: 1;

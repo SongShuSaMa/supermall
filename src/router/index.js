@@ -14,7 +14,6 @@ Vue.use(VueRouter)
 			meta: {
 				title: "首页"
 			},
-			
 		},
 		{
 			path: "/Category",
@@ -36,6 +35,10 @@ Vue.use(VueRouter)
 			meta: {
 				title: "我的"
 			}
+		},
+		{
+			path: "/Detail/:iid",
+			component:() => import('views/Detail/DetailMain'),
 		}
 ]
 

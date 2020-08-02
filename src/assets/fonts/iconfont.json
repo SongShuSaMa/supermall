@@ -1,10 +1,45 @@
 {
   "id": "1949475",
-  "name": "TabBar",
+  "name": "supermall",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
+    {
+      "icon_id": "14145119",
+      "name": "对",
+      "font_class": "dui",
+      "unicode": "e73f",
+      "unicode_decimal": 59199
+    },
+    {
+      "icon_id": "11519572",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e73d",
+      "unicode_decimal": 59197
+    },
+    {
+      "icon_id": "12025960",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e7a4",
+      "unicode_decimal": 59300
+    },
+    {
+      "icon_id": "4884445",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "444607",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
     {
       "icon_id": "2127895",
       "name": "五角星",

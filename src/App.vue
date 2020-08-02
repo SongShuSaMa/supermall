@@ -1,12 +1,10 @@
 <template>
 	<div>
-
-		
-		<keep-alive>
+		<keep-alive exclude="Detail">
 			<router-view/>
 		</keep-alive>
 		
-		<tab-bar-main></tab-bar-main>
+		<tab-bar-main v-if="isTabBarMain"></tab-bar-main>
 	</div>
 </template>
 
@@ -16,6 +14,11 @@
 	export default {
 		components: {
 			TabBarMain,
+		},
+		computed: {
+			isTabBarMain(){
+				return this.$route.path.indexOf("/Detail") === -1;
+			}
 		}
 	}
 </script>

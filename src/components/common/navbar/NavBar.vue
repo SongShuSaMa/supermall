@@ -11,16 +11,15 @@
 
 <style>
 	.navbar{
-		background-color: #E06C75;
 		display: flex;
 		width: 100%;
 		height: 45px;
 		text-align: center;
 		line-height: 45px;
-		color: #fff;
 		font-size: 18px;
 		position: fixed;
-		z-index: 999;
+		top: 0;
+		z-index: 9;
 	}
 	
 	.left,.right{

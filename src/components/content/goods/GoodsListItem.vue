@@ -1,7 +1,7 @@
 <template>
 	<div class="goodslistitem">
-		<a :href="item.link">
-			<img class="goodsitemimg" :src="item.show.img" alt="">
+		<a href="javascript:void(0)" @click="goDetail(item)">
+			<img class="goodsitemimg" v-lazy="getImage" alt="" @load="imgLoad">
 			<p class="goodsitemtitle">{{ item.title }}</p>
 				<p>
 					<span class="itemprice">¥{{ item.price }}</span>
@@ -21,6 +21,19 @@
 					return {}
 				}
 			}
+		},
+		computed:{
+			getImage(){
+				return this.item.show? this.item.show.img:this.item.image;
+			}
+		},
+		methods:{
+			imgLoad(){
+				this.bus.$emit("goodsImgLoad");
+			},
+			goDetail(item){
+				this.$router.push("/Detail/"+item.iid);
+			}
 		}
 	}
 </script>
@@ -31,9 +44,11 @@
 		width: 48%;
 		text-align: center;
 		padding: 4px 0px;
+
 	}
 	.goodsitemimg{
 		width: 100%;
+		border-radius: 5px;
 	}
 	
 	
